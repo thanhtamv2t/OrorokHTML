@@ -1,0 +1,12 @@
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1600px) {
+  .content {
+    section {
+      ul {
+        li {
+          font-size: 1em !important;
+        }
+      }
+    }
+  }
+}

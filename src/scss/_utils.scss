@@ -1,0 +1,30 @@
+.text {
+  &-center {
+    text-align: center !important;
+  }
+  &-left {
+    text-align: left !important;
+  }
+  &-right {
+    text-align: right !important;
+  }
+}
+
+.flex {
+  display: flex;
+  > * {
+    flex: 1;
+  }
+  .f-1 {
+    flex: 1 !important;
+  }
+  .f-2 {
+    flex: 2 !important;
+  }
+  .f-3 {
+    flex: 3 !important;
+  }
+}
+.d-none {
+  display: none;
+}

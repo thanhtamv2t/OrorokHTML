@@ -2,6 +2,31 @@
   border: none;
   background: none;
   outline: none;
+  position: relative;
+  &:hover {
+    cursor: pointer;
+  }
+  &:before {
+    display: block;
+    height: 16px;
+    width: 5px;
+    content: " ";
+    position: absolute;
+    background: rgba(white, 0.5);
+    right: 6px;
+    top: 6px;
+    border-radius: 12px;
+  }
+  &:after {
+    display: block;
+    content: " ";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background: rgba(white, 0.5);
+    border-radius: 100%;
+    right: 6px;
+  }
   &--download {
     position: relative;
     font-family: "Caveat", cursive;
@@ -40,5 +65,20 @@
         left: 5px;
       }
     }
+  }
+  &--primary {
+    background-image: linear-gradient(
+      to right top,
+      #eb4d4b,
+      #f05857,
+      #f66462,
+      #fa6e6e,
+      #ff7979
+    );
+    padding: 12px 24px;
+    border-radius: 7px;
+    color: #fff;
+    font-family: "Odibee Sans", cursive;
+    text-transform: uppercase;
   }
 }
